@@ -1,0 +1,88 @@
+body{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    min-height: 100vh;
+}
+/*custom btn modal*/
+.openModal{
+    padding: 10px 4px;
+    border: 1px solid blue;
+    background-color: blue;
+    color: white;
+    font-weight: 500;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+.openModal:hover{
+    padding: 12px ;
+}
+/* Custom modal content*/
+
+.modal-content{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0);
+    background-color: rgba(5, 5, 5, 0.521);
+}
+.modal-content.show .myModal{
+    transform: translateY(0);
+}
+.myModal{
+  
+    width: 40%;
+    margin: 15% auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 5px 2px 40px rgba(19, 15, 15, 0.521);
+    text-align: center;
+    transform: translateY(-300px);
+    transition: transform 0.5s ease-in-out;
+}
+
+/* Custom btn-modal*/
+.btn button{
+    padding: 10px 4px;
+    width: 120px;
+    background-color: blue;
+    color: white;
+    font-weight: 500;
+    border-radius: 6px;
+    cursor: pointer;
+    border: none;
+    transition: all 0.5s;
+}
+.btn button:hover{
+    padding: 12px;
+}
+
+@media (max-width: 504px) {
+    .myModal{
+        width: 60%;
+        margin: 15% auto;
+        font-size: 12px;
+        padding: 20px;
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 5px 2px 40px rgba(19, 15, 15, 0.521);
+        text-align: center;
+        transform: translateY(-300px);
+        transition: transform 0.5s ease-in-out;
+    }
+    
+}

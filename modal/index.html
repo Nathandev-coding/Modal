@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>modal usiong html css and javscript</title>
+    <!--------------link css file---------------->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <section>
+            <!-------- Modal btn ------>
+            <div class="btn-modal">
+                <button id="openModal" class="openModal">Show modal</button>
+            </div>
+            <!------- Modal content----->
+            <div class="modal-content" id="modal-content">
+                <!-------- Modal---->
+                <div class="myModal" id="myModal">
+                    <!-------- Modal icon---->
+                    <div class="modal-header">
+                        <span style="font-size: 40px;cursor: pointer;float: right;" id="closeModal">&times;</span>
+                    </div>
+                    <div class="modal-body">
+                        <h3>voulez-vous vraiment supprimer</h3>
+
+                        <div class="btn">
+                            <button class="btn-modal" id="cancel" style="background-color: red;">Cancel</button>
+                            <button class="btn-modal">Submit</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!------------link JS file--------->
+    <script src="script.js" defer></script>
+</body>
+</html>
